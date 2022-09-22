@@ -1,3 +1,12 @@
 {
+  "parserOptions": { 
+    "ecmaVersion":2020,
+    "sourceType": "module"
+  },
+  "rules": { 
+    "no-console": "warn", 
+    "no-use-before-define": "warn", 
+    "spaced-comment": "warn" 
+  }, 
   "extends": ["standard"]
 }
