@@ -1,3 +1,4 @@
+import React from 'react'
 import Book from '../ui/components/Book'
 
 export default function Bookdetail () {

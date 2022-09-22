@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
+import { AUTHOR_MOCK } from '../../config/mock/mock'
 
-export default function Author ({ id, name, image, born, died, nationalities, genres, resume, books }) {
+export default function Author () {
+  const { name, image, born, died, nationalities, genres, resume, books } = AUTHOR_MOCK
   return (
       <article className="mx-auto shadow-xl rounded-xl overflow-hidden border-2 border-slate-800 m-2 max-w-xl p-4">
         <h2>Ficha de Autor</h2>

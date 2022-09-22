@@ -6,7 +6,11 @@
   "rules": { 
     "no-console": "warn", 
     "no-use-before-define": "warn", 
-    "spaced-comment": "warn" 
-  }, 
-  "extends": ["standard"]
+    "spaced-comment": "warn",
+    "react/jsx-uses-react": "error",   
+    "react/jsx-uses-vars": "error",
+    "react/prop-types": "off"
+  },
+  "plugins": ["react"],
+  "extends": ["standard","plugin:react/recommended"]
 }

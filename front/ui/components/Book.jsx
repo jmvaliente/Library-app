@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 import { BOOK_DETAIL_MOOK } from '../../config/mock/mock'
 
