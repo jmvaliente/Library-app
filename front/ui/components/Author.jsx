@@ -1,11 +1,11 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
-export default function Author({id, name, image, born, died,nationalities,genres,resume,books}) {
+export default function Author ({ id, name, image, born, died, nationalities, genres, resume, books }) {
   return (
-      <article className="mx-auto shadow-xl rounded-xl overflow-hidden border-2 border-slate-800 m-2 max-w-md p-6">
+      <article className="mx-auto shadow-xl rounded-xl overflow-hidden border-2 border-slate-800 m-2 max-w-xl p-4">
         <h2>Ficha de Autor</h2>
-        <section className=" mb-6">
+        <section className="mb-6">
           <div className="flex flex-col justify-items-center items-center">
             <Image
               loading="lazy"
@@ -63,5 +63,5 @@ export default function Author({id, name, image, born, died,nationalities,genres
           </ul>
         </section>
       </article>
-  );
+  )
 }
