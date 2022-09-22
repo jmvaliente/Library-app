@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 
 import { AUTHOR_MOCK, BOOK_DETAIL_MOOK } from '../../config/mock/mock'
-export default function LectorActivo() {
-    const { image, genres } = AUTHOR_MOCK
-    const { title } = BOOK_DETAIL_MOOK
-    return (
+export default function LectorActivo () {
+  const { image, genres } = AUTHOR_MOCK
+  const { title } = BOOK_DETAIL_MOOK
+  return (
         <div className="mx-auto shadow-xl rounded-xl overflow-hidden border-2 border-slate-800 m-2 max-w-xl p-4">
             <div className="flex p-4">
                 <div className="flex-1 w-50">
@@ -45,7 +45,6 @@ export default function LectorActivo() {
                 </section>
             </div>
 
-
             <div className="flex pt-4">
                 <div className="flex-1 w-50">
                     <h3 className="font-bold text-lg">Libro Favorito: </h3>
@@ -69,5 +68,5 @@ export default function LectorActivo() {
             </div>
 
         </div>
-    )
+  )
 }
