@@ -3,14 +3,14 @@ import { BOOK_DETAIL_MOOK } from '../../config/mock/mock'
 
 export default function Book () {
   return (
-        <div className="p-6">
+        <div className="mx-auto shadow-xl rounded-xl overflow-hidden border-2 border-slate-800 m-2 max-w-xl p-4">
             <div className="flex">
                 <div className="flex-1 w-50">
                     <Image src={BOOK_DETAIL_MOOK.image} height={BOOK_DETAIL_MOOK.height } width={BOOK_DETAIL_MOOK.width}/>
                 </div>
-                <div className="flex-1 w-50 grid grid-cols-1 content-arround">
+                <div className="flex-1 w-50 grid grid-cols-1 content-arround text-gray-700">
                     <div>
-                        <h2 className="font-bold text-xl">{BOOK_DETAIL_MOOK.title}</h2>
+                        <h2 className="font-bold text-xl ">{BOOK_DETAIL_MOOK.title}</h2>
                     </div>
                     <div>
                         <ul>
@@ -41,7 +41,7 @@ export default function Book () {
                 </section>
             </div>
             <div className="pt-6">
-                <p className="font text-sm">{BOOK_DETAIL_MOOK.sinopsis}
+                <p className="font text-sl text-gray-700">{BOOK_DETAIL_MOOK.sinopsis}
                 </p>
             </div>
         </div>
