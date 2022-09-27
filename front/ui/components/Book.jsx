@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { BOOK_DETAIL_MOOK } from '../../config/mock/mock'
+import Rating from './rating'
 
 export default function Book () {
   return (
@@ -26,7 +27,7 @@ export default function Book () {
             </div>
             <div className="flex pt-4">
                 <div className="flex-1 w-50">
-                    4 Stars
+                    <Rating/>
                 </div>
                 <section className="flex-1 w-50 text-right">
                     <p>
