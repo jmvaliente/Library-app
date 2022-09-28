@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { BOOK_DETAIL_MOOK } from '../../config/mock/mock'
-import Rating from './rating'
+import Rating from './Rating'
 
 export default function Book () {
   return (
