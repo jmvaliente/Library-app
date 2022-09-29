@@ -33,9 +33,9 @@ export const AUTHOR_MOCK = {
 }
 
 export const LISTBOOK = {
-  id:1,
+  id: 1,
   name_author: 'Gabriel Garcia Marquez',
   name_book: 'Cien años de Soledad',
   title: 'Cien años de Soledad',
-  image:'/../public/lupa.png',
+  image: '/../public/lupa.png'
 }
