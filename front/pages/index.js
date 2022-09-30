@@ -17,9 +17,19 @@ export default function Home () {
       </Head>
 
       <main>
-        <h1 className='text-5xl my-8 text-center'>Entre páginas</h1>
+        <div className='flex items-center px-4 my-8 justify-between'>
+        <Image
+              loading="lazy"
+              className=""
+              alt="Logo"
+              src={'/../public/logo.png'}
+              width={40}
+              height={40}
+            />
+        <h1 className='text-4xl'>Entre páginas</h1>
+        </div>
         <div>
-          <Search />
+          {/* <Search /> */}
         </div>
         <div className='mx-auto px-4 flex flex-col gap-4'>
           <h2 className='text-3xl text-center my-8'>Top libros más recomendados</h2>
