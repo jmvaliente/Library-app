@@ -15,9 +15,6 @@ export default function Search () {
               width={40}
               height={40}
             />
-      {/* <div className="lupa">
-        <button> <Image src={image} width={20} height={20} tabIndex={10} /></button>
-      </div> */}
     </div>
   )
 }
