@@ -1,9 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import Search from '../ui/components/Search'
-import BookCard from '../ui/components/BookCard'
 import Review from '../ui/components/Review'
 import MenuMobile from '../ui/components/MenuMobile'
 
@@ -31,13 +29,10 @@ export default function Home () {
         <h1 className='text-4xl ml-4'>Entre páginas</h1>
         </div>
         <div>
-          <Search />
+          <Search/>
         </div>
         <div className='mx-auto px-4 flex flex-col gap-4'>
           <h2 className='text-3xl text-center my-8'>Top libros más recomendados</h2>
-        <BookCard />
-        <BookCard />
-        <BookCard />
         </div>
         <div className='mx-auto px-4 mb-20'>
           <h2 className='text-3xl text-center my-8'>Reseñas de los lectores</h2>
