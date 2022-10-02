@@ -9,22 +9,23 @@ function naviteTo (id, router) {
 
 export default function SearchBookList () {
   const router = useRouter()
+  // Get id from URL '/searchbooklist?id=TEST' -- id = TEST
   const { id } = router.query
-  const dataV2 = useGetBooks(id)
-  const datos = dataV2.books.items
+  const dataOrigin = useGetBooks(id)
+  const dataList = dataOrigin?.books?.items ?? []
   return (
     <div className="p-2 md:32 lg:48">
-    {dataV2?.books.items
+    {dataList
       ? <div>{
-        datos.map((item, index) => (
+        dataList?.map((item, index) => (
           <span
               className="text-gray-700 border-l-2 mr-3 border-slate-800 pl-1"
               key={index}
-          > <button onClick={(event) => { naviteTo(dataV2.books.items[index].id, router) } } > <BookCard>{dataV2.books.items[index]}</BookCard> </button>
+          > <button onClick={(event) => { naviteTo(item.id, router) } } > <BookCard>{item}</BookCard> </button>
           </span>
         ))
     }</div>
-      : null}
+      : <></>}
 
 </div>
   )

@@ -8,7 +8,7 @@ export const useGetBooks = (title) => {
   const [error, setError] = useState({})
 
   useEffect(() => {
-    fetch(`${URL}/volumes?q=${title}&maxResults=5`)
+    fetch(`${URL}/volumes?q=${title}&maxResults=10`)
       .then(data => {
         setLoading(true)
         return data.json()
